@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="canonical" href="/portfolio" />
-    <meta http-equiv="refresh" content="0;url=/portfolio" />
+    <meta charset="UTF-8" />
     <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        background: #dcdcdc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: "Courier New", monospace;
+        color: #333;
+      }
+
+      img {
+        width: 180px;
+        height: auto;
+        image-rendering: pixelated;
+      }
+
+      .loader {
+        margin-top: 20px;
+        font-size: 1.1rem;
+        animation: blink 1s step-end infinite;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 0.3;
+        }
+      }
+    </style>
+    <script>
+      setTimeout(() => {
+        window.location.href = "https://iamtheef.github.io/portfolio";
+      }, 3000);
+    </script>
   </head>
   <body>
-    <p>
-      If you're not redirected automatically,
-      <a href="/portfolio">click here</a>.
-    </p>
+    <img src="RsMdYJ.gif" alt="Cat dance" />
+    <div class="loader">Page moved. Please wait...</div>
   </body>
 </html>
